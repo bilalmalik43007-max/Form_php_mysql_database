@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <style>
+form{
+margin: auto;
+width: 20%;
+padding: 20px;
+border-radius: 15px;
+text-align: center;
+border: 1px solid rgba(0, 0, 0, 0.177);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+
+}
+input[type="text"],
+input[type="email"]{
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.177);
+  border-radius: 5px;
+  height: 22px;
+
+}
+button{
+  margin: auto;
+  background-color: blue;
+  display: block;
+  color: white;
+  padding: 7px;
+  border-radius: 20px;
+}
+h2{
+  color: green;
+}
+fieldset{
+
+border: 1px solid rgba(0, 0, 0, 0.192);
+border-radius: 20px;
+color: green;
+
+}
+
+  </style>
+  
+</head>
+<body>
+
+  <form action="insert.php" method="POST">
+<fieldset>
+  <legend>Student Registration Form</legend>
+  <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required placeholder="Type Your Name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required placeholder="Type Your Email"><br><br>
+
+    <label for="course">Course:</label><br>
+    <input type="text" id="course" name="course" required placeholder="Type Your course"><br><br>
+        <button type="submit">Register</button>
+
+
+</fieldset>
+  
+
+    
+
+  </form>
+
+  
+</body>
+</html>
